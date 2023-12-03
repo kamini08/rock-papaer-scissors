@@ -1,0 +1,134 @@
+
+body {
+    margin: 0px 0px;
+    background-color: black;
+}
+
+.header {
+    background-color: rgb(17, 17, 35);
+    color: rgba(215, 12, 103, 0.538);
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Smooch', cursive;
+    font-size: 160%;
+    
+}
+
+.header:hover {
+    color: rgb(215, 12, 103);
+    font-size: 170%;
+    text-decoration: underline;
+    cursor: pointer;
+    transition-delay: 30ms;
+
+}
+
+.mainSec {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3rem 10rem;
+    flex-direction: column;
+    align-items: center;
+    height: 60rem;
+    background-color: black;
+}
+
+.mainSec div {
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+a {
+    color: rgba(255, 255, 255, 0.873);
+}
+
+.scoreboard {
+    flex-direction: column;
+    color: rgba(255, 255, 255, 0.923);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.6rem;
+}
+
+.scoreboard .choice {
+    font-weight: 600;
+    margin: 5px auto;
+
+}
+
+
+.scoreDisplay {
+    height: 20%;
+    color: rgba(255, 255, 255, 0.923);
+}
+
+.scoreDisplay div {
+    margin: auto 20px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 5%;
+    background-color: rgba(215, 12, 103, 0.438);
+    height: 150px;
+    width: 150px;
+}
+
+.scoreDisplay span {
+    font-size: 67px;
+}
+
+
+.choiceCard {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 30px 10px;
+    height: 300px;
+    width: 250px;
+    color: rgba(255, 255, 255, 0.923);
+    font-size: 21px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    align-items: center;
+}
+
+.choiceCard div {
+    margin: 0px 35px;
+    // background-color: rgb(17, 17, 35));
+    height: 200px;
+    width: 210px;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.choiceCard div:hover {
+    height: 210px;
+    width: 220px;
+    background-color: rgba(17, 17, 35, 0.534);
+    cursor: pointer;
+}
+
+.mainEnd {
+    color: rgba(255, 255, 255, 0.923);
+    font-size: 30px;
+
+}
+
+.footer {
+    color: rgba(255, 255, 255, 0.923);
+    background-color: rgb(17, 17, 35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
