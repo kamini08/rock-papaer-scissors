@@ -24,8 +24,8 @@ var updateChoice = document.getElementsByClassName("choice")[0];
 
 function gameReset() {
     isGameOver=false;
-    document.getElementsByClassName("finalWindow")[0].style.opacity = 0;
-    let finalWinner
+    document.getElementsByClassName("finalWindow")[0].style.display = 'none';
+
     playerScore = 0;
     compScore = 0;
     updateChoice.innerText = "Make Your Choice";
@@ -37,11 +37,13 @@ function gameReset() {
 
 function finalScore() {
 
-    document.getElementsByClassName("finalWindow")[0].style.opacity = 1;
+    document.getElementsByClassName("finalWindow")[0].style.display = 'flex';
     let finalWinner = document.getElementsByClassName("finalWindow")[0].firstChild;
     if(playerScore == 5) {
+
         finalWinner.textContent="You Won!";
     } else {
+    
         finalWinner.textContent="Computer Won!";
     }
     document.getElementsByClassName("startAgain")[0].addEventListener("click", () => {
@@ -49,24 +51,29 @@ function finalScore() {
     } )
 }
 
+function updateScore() {
+    var newPlayerPoint = document.createElement('span');
+    var newCompPoint = document.createElement('span')
+    newPlayerPoint.appendChild(document.createTextNode(playerScore)); 
+    newCompPoint.appendChild(document.createTextNode(compScore));
+    let queMark1 = player.firstElementChild;
+    let queMark2 = computer.firstElementChild;
+    queMark1.remove();
+    queMark2.remove();
+    player.prepend(newPlayerPoint);
+    computer.prepend(newCompPoint);
+}
 
 function checkScore() {
     if (playerScore == 5 || compScore == 5 || isGameOver ==true) {
 
         isGameOver=true;
+        updateScore();
         finalScore();
         
     } else {
-        var newPlayerPoint = document.createElement('span');
-        var newCompPoint = document.createElement('span')
-        newPlayerPoint.appendChild(document.createTextNode(playerScore)); 
-        newCompPoint.appendChild(document.createTextNode(compScore));
-        let queMark1 = player.firstElementChild;
-        let queMark2 = computer.firstElementChild;
-        queMark1.remove();
-        queMark2.remove();
-        player.prepend(newPlayerPoint);
-        computer.prepend(newCompPoint);
+
+        updateScore();
 
     }
 }
@@ -78,6 +85,7 @@ function gameRound(playerChoice) {
 
         if(playerChoice===computerChoice) {
             updateChoice.textContent = "It's a tie...";
+            checkScore();
         } else if(
             (playerChoice === 'rock' && computerChoice === 'scissors') ||
             (playerChoice === 'scissors' && computerChoice === 'paper') ||
@@ -85,12 +93,12 @@ function gameRound(playerChoice) {
         ) {
             updateChoice.textContent = "You Won!";
             
-            checkScore();
             playerScore++;
+            checkScore();
         } else {
             updateChoice.textContent = "Computer Won!";
-            checkScore();
             compScore++;
+            checkScore();
         }
 
     }
