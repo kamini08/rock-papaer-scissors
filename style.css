@@ -12,7 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     font-family: 'Smooch', cursive;
-    font-size: 160%;
+    font-size: min(2rem, 1.5rem);
     
 }
 
@@ -28,11 +28,11 @@ body {
 .mainSec {
     display: flex;
     flex-wrap: wrap;
-    padding: 3rem 10rem;
+    padding: 3rem 2rem;
     flex-direction: column;
     align-items: center;
     height: 60rem;
-    margin: 2rem auto;
+    margin: 2rem 2rem;
     background-color: #F6F7C4;
 }
 
@@ -74,7 +74,7 @@ a {
     align-items: center;
     text-align: center;
     border-radius: 5%;
-    background-color: rgba(215, 12, 103, 0.438);
+    background: rgba(215, 12, 103, 0.438);
     height: 10rem;
     width: 10rem;
 }
@@ -99,7 +99,7 @@ a {
 
 .choiceCard div {
     margin: 0 6rem;
-    background-color: rgb(17, 17, 35);
+    background: transparent;
     height: 13rem;
     width: 13rem;
 }
@@ -111,9 +111,9 @@ img {
 
 
 .choiceCard div:hover {
-    height: 13rem;
-    width: 13rem;
-    background-color: rgba(17, 17, 35, 0.534);
+    height: 14rem;
+    width: 14rem;
+    background: transparent;
     cursor: pointer;
     transition-delay: 60ms;
 }
@@ -206,8 +206,8 @@ img {
     }
 
     .choiceCard div:hover {
-        height : 9rem;
-        width: 9rem;
+        height : 10rem;
+        width: 10rem;
     }
 
     .scoreboard {
@@ -253,8 +253,8 @@ img {
     }
 
     .choiceCard div:hover {
-        height : 3rem;
-        width: 3rem;
+        height : 4rem;
+        width: 4rem;
     }
 
     .scoreDisplay span {
@@ -264,7 +264,7 @@ img {
     .scoreDisplay div {
         height: 6rem;
         width: 6rem;
-        margin: 2rem auto;
+        margin: 2rem 1rem;
         flex-direction: column;
     }
 
