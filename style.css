@@ -111,8 +111,8 @@ img {
 
 
 .choiceCard div:hover {
-    height: 14rem;
-    width: 14rem;
+    height: 13rem;
+    width: 13rem;
     background-color: rgba(17, 17, 35, 0.534);
     cursor: pointer;
     transition-delay: 60ms;
@@ -206,8 +206,8 @@ img {
     }
 
     .choiceCard div:hover {
-        height : 10rem;
-        width: 10rem;
+        height : 9rem;
+        width: 9rem;
     }
 
     .scoreboard {
@@ -253,8 +253,8 @@ img {
     }
 
     .choiceCard div:hover {
-        height : 4rem;
-        width: 4rem;
+        height : 3rem;
+        width: 3rem;
     }
 
     .scoreDisplay span {
