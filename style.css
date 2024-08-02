@@ -105,8 +105,8 @@ a {
 }
 
 img {
-    height: 14rem;
-    width: 14rem;
+    height: 13rem;
+    width: 13rem;
 }
 
 
@@ -200,6 +200,11 @@ img {
         
     }
 
+    img {
+        height: 9rem;
+        width: 9rem;
+    }
+
     .choiceCard div:hover {
         height : 10rem;
         width: 10rem;
@@ -227,6 +232,7 @@ img {
     .choiceCard {
         height: 4rem;
         width: 4rem;
+        font-size: 1rem;
     }
 
     .choiceCard div {
@@ -236,8 +242,14 @@ img {
         
     }
 
-    p, .scoreDisplay p, .choiceBoard p {
-        
+    img {
+        height: 3rem;
+        width: 3rem;
+    }
+
+    .mainEnd p, .scoreDisplay p, .choiceBoard p {
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 0.8rem;
     }
 
     .choiceCard div:hover {
@@ -245,14 +257,15 @@ img {
         width: 4rem;
     }
 
-    .scoreDisplay {
-        height: fit-content;
-        width: fit-content;
+    .scoreDisplay span {
+        font-size: 2rem;
     }
 
     .scoreDisplay div {
-        height: 4rem;
-        width: 4rem;
+        height: 6rem;
+        width: 6rem;
+        margin: 2rem auto;
+        flex-direction: column;
     }
 
     .scoreboard {
