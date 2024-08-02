@@ -265,6 +265,7 @@ img {
         height: 6rem;
         width: 6rem;
         margin: 2rem 1rem;
+        display: flex;
         flex-direction: column;
     }
 
